@@ -1,0 +1,37 @@
+{
+  "name": "new-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "excel4node": "^1.8.2",
+    "exceljs": "^4.3.0",
+    "express": "^4.18.2",
+    "express-form-data": "^2.0.22",
+    "expressjs": "^1.0.1",
+    "jsonwebtoken": "^9.0.1",
+    "knex": "^2.5.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.3",
+    "objection": "^3.0.4",
+    "objection-guid": "^3.1.0",
+    "oracledb": "^6.0.3",
+    "path": "^0.12.7",
+    "pdfkit": "^0.13.0",
+    "pino": "^8.15.1",
+    "pino-pretty": "^10.2.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "uuid": "^9.0.0",
+    "voilab-pdf-table": "^0.5.1",
+    "xlsx": "^0.18.5"
+  }
+}
