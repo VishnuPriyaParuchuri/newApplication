@@ -7,7 +7,7 @@ app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 const {userType} = require('../utils/constants');
 const Authentication = require('../service/authentication');
-
+const logger = require('../service/logger');
 
 let userService = require('../service/user');
 let teacherService = require('../service/teacher');
@@ -103,7 +103,7 @@ app.use(myInit);
 
 
 
-app.get('/api/teacher/data', async(req,res) => {
+app.get('/api/teacher/data', Authentication.authorize([userType.TEACHER, userType.ADMIN]),async(req,res) => {
     return res.json(await teacherService.TeacherDetails());
 })
 

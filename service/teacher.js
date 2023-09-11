@@ -2,7 +2,7 @@ const db = require('../db/teacher')
 const config = require ('../config');
 const common = require('../utils/utils');
 const userDB = require('../db/user');
-
+const logger = require('../service/logger');
 
 
 let TeacherDetails = async () => {
